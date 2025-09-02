@@ -67,7 +67,7 @@ class CreateComments < ActiveRecord::Migration[7.1]
 end
 ```
 
-## Models
+### Models
 
 ```ruby
 class User < ApplicationRecord
@@ -123,7 +123,7 @@ Comments:
 
 This is the same as we've done before –– we're simply looking at data associated with posts and comments. Calling `comment.user` returns for us the `User` object associated with that comment. We can then call any method that our user responds to, such as `username`.
 
-## Adding Posts to Our Users
+### Adding Posts to Our Users
 
 Let's say that on our `User#show` page we want our users to see a list of all of the posts that they've commented on. What would that look like?
 
